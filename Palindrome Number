@@ -1,0 +1,23 @@
+# Math-Leetcode
+# Palindrome Number
+# Problem - 9
+
+class Solution {
+    public boolean isPalindrome(int x) 
+    {
+        int y = x;
+        if(x<0)
+        {
+            return false;
+        }
+        int rem = 0;
+        int z=0;
+        while(x>0)
+        {
+            rem=rem*10+x%10;
+            x=x/10;
+            
+        }
+        return (y==rem);
+    }
+}
